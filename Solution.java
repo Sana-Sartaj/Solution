@@ -1,4 +1,20 @@
+import java.util.*;
+
 public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a string containing only '(' and ')': ");
+        String input = sc.nextLine();
+
+        Solution solver = new Solution();
+        int result = solver.longestValidParentheses(input);
+
+        System.out.println("Longest valid parentheses substring length: " + result);
+
+        sc.close();
+        }
+
     public int longestValidParentheses(String s) {
         int maxLen = 0, left = 0, right = 0;
 
