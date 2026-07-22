@@ -14,8 +14,8 @@ public class Solution {
             if (left == right) {
                 maxLen = Math.max(maxLen, 2 * right);
             }
-            else if {
-                (right > left) left = right = 0; 
+            else if (right > left) {
+                left = right = 0; 
             }
         }
 
